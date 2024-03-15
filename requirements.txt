@@ -1,0 +1,8 @@
+python-dotenv
+openai
+langchain
+streamlit
+streamlit_chat
+langchain-openai
+langchain-community
+google-api-python-client
