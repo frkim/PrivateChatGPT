@@ -77,7 +77,7 @@ if prompt := st.chat_input(placeholder="Type a question here"):
 
     llm = get_azure_openai_client() #ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key=openai_api_key, streaming=True)
 
-    # tools = load_tools(["google-serper"], llm, serper_api_key="83702167fca47fb43731ce846952fd3f368c7db6")
+    # tools = load_tools(["google-serper"], llm, serper_api_key="#######################")
     tools = load_tools(["bing-search"], llm, bing_subscription_key=os.getenv('BING_SUBSCRIPTION_KEY'), bing_search_url="https://api.bing.microsoft.com/v7.0/search", search_kwargs={'mkt': 'fr-FR', 'setLang':'fr-FR', 'safeSearch': 'moderate'})
 
     #search = BingSearchAPIWrapper(k=1, bing_subscription_key="##################", bing_search_url="https://api.bing.microsoft.com/v7.0/search", search_kwargs={'mkt': 'fr-FR', 'setLang':'fr-FR', 'safeSearch': 'moderate'})
